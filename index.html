@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sagara Store</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+ body {margin:0;font-family:'Poppins',sans-serif;background:#121212;color:#fff;overflow-x:hidden;}
+ header {position:fixed;top:0;left:0;width:100%;background:#1f1f1f;padding:15px 30px;display:flex;align-items:center;justify-content:space-between;z-index:10;box-shadow:0 2px 8px rgba(0,0,0,0.5);}
+ header img.logo {height:50px;}
+ nav a {color:#fff;margin-left:20px;text-decoration:none;font-weight:600;transition:color .3s;}
+ nav a:hover {color:#f05454;}
+ .hero {padding-top:100px;text-align:center;background:linear-gradient(135deg,#ff416c,#ff4b2b);padding-bottom:80px;}
+ .hero h1 {font-size:3em;margin-bottom:10px;}
+ .hero p {font-size:1.2em;margin-bottom:30px;}
+ .btn {background:#fff;color:#121212;padding:12px 25px;border-radius:30px;text-decoration:none;font-weight:600;transition:0.3s;display:inline-block;}
+ .btn:hover {background:#f05454;color:#fff;}
+ .content {padding:60px 20px;max-width:1000px;margin:auto;}
+ .section-title {text-align:center;font-size:2em;margin-bottom:30px;color:#f05454;}
+ .price-card {background:#1f1f1f;padding:20px;border-radius:15px;text-align:center;margin:20px;flex:1;min-width:250px;box-shadow:0 4px 12px rgba(0,0,0,0.4);}
+ .price-container {display:flex;flex-wrap:wrap;justify-content:center;}
+ .contact {text-align:center;margin-top:40px;}
+ .contact img {vertical-align:middle;height:25px;margin-right:8px;}
+ .quotes {margin-top:60px;}
+ .quotes p {background:#1f1f1f;padding:15px;border-radius:10px;margin:10px 0;}
+ .profile-modal {position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);display:none;align-items:center;justify-content:center;}
+ .profile-content {background:#1f1f1f;padding:30px;border-radius:15px;text-align:center;width:300px;}
+ .profile-content h2 {margin-bottom:10px;color:#f05454;}
+ .close {cursor:pointer;color:#fff;font-weight:600;margin-top:15px;display:inline-block;}
+ .flower {position:fixed;top:-10%;font-size:24px;color:#fff;animation:fall linear forwards;}
+ @keyframes fall {0%{transform:translateY(0);}100%{transform:translateY(110vh);} }
+</style>
+</head>
+<body>
+<header>
+  <img src="https://i.ibb.co/DfL3RXQ7/cropped-SAGARA-GROUP.png" alt="Sagara Group Logo" class="logo">
+  <nav>
+    <a href="#price">Harga</a>
+    <a href="#quotes">Quotes</a>
+    <a href="#contact">Kontak</a>
+    <a href="#" id="profileBtn">Profil</a>
+  </nav>
+</header>
+<section class="hero">
+  <h1>Sagara Store</h1>
+  <p>Jasa pembuatan Map Roblox profesional</p>
+  <a href="https://wa.me/6285211080404" class="btn">Pesan Sekarang</a>
+</section>
+<section class="content" id="price">
+  <h2 class="section-title">Daftar Harga</h2>
+  <div class="price-container">
+    <div class="price-card">
+      <h3>Paket Dasar</h3>
+      <p>Mulai Rp.150.000</p>
+    </div>
+    <div class="price-card">
+      <h3>Paket Premium</h3>
+      <p>Hingga Rp.1.000.000</p>
+    </div>
+  </div>
+  <p style="text-align:center;margin-top:20px;">Harga tergantung banyaknya objek dan ukuran map.</p>
+</section>
+<section class="content" id="quotes">
+  <h2 class="section-title">Kata Bijak</h2>
+  <div class="quotes">
+    <p>1. Kejujuran adalah matahari yang menyinari setiap langkah kita.</p>
+    <p>2. Kebenaran adalah jembatan yang menghubungkan hati kita dengan hati orang lain.</p>
+    <p>3. Kesalahan terkecil yang dibenarkan adalah langkah menuju kebohongan yang lebih besar.</p>
+    <p>4. Hanya dengan jujur kita bisa membangun kepercayaan yang tak tergoyahkan.</p>
+    <p>5. Jujur adalah kekuatan utama yang membuat hidup kita lebih bermakna.</p>
+    <p>6. Jujur adalah kekuatan terapi yang mambesarkan jiwa dan menguatkan hati.</p>
+    <p>7. Jangan kau takut jujur hanya karena takut kehilangan, sebab kehilangan itu merupakan jalan menuju yang lebih baik.</p>
+    <p>8. Satu kebohongan mungkin bisa menghindari masalah, namun kejujuran akan memberikan kedamaian sepanjang masa.</p>
+    <p>9. Kejujuran adalah bahasa yang dipahami oleh semua orang, tanpa perlu diterjemahkan.</p>
+    <p>10. Menghindari kejujuran hanya akan melukai hati dan kehilangan kepercayaan.</p>
+  </div>
+</section>
+<section class="content contact" id="contact">
+  <h2 class="section-title">Hubungi Kami</h2>
+  <p><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"> <a href="https://wa.me/6285211080404" style="color:#fff;text-decoration:none;">6285211080404</a></p>
+  <p><img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png"> <a href="mailto:ryzkyarya28@gmail.com" style="color:#fff;text-decoration:none;">ryzkyarya28@gmail.com</a></p>
+  <p><img src="https://i.ibb.co/twySK4S7/Roblox-Corporation-2025-logo-svg.png" alt="Roblox Logo" style="height:40px;"></p>
+  <a href="https://saweria.co/sagara28" class="btn">Dukung di Saweria</a>
+</section>
+<div class="profile-modal" id="profileModal">
+  <div class="profile-content">
+    <h2>Profil Pemilik</h2>
+    <p>Nama: Ryzky Arya</p>
+    <span class="close" id="closeProfile">Tutup</span>
+  </div>
+</div>
+<script>
+const profileBtn=document.getElementById('profileBtn');
+const profileModal=document.getElementById('profileModal');
+const closeProfile=document.getElementById('closeProfile');
+profileBtn.onclick=()=>profileModal.style.display='flex';
+closeProfile.onclick=()=>profileModal.style.display='none';
+window.onclick=e=>{if(e.target==profileModal)profileModal.style.display='none';};
+function createFlower(){
+  const flower=document.createElement('div');
+  flower.classList.add('flower');
+  flower.innerHTML='\u273F';
+  flower.style.left=Math.random()*100+'vw';
+  flower.style.animationDuration=(4+Math.random()*4)+'s';
+  document.body.appendChild(flower);
+  setTimeout(()=>flower.remove(),8000);
+}
+setInterval(createFlower,300);
+</script>
+</body>
+</html>
